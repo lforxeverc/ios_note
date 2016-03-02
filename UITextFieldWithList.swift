@@ -77,6 +77,7 @@ class UITextFieldWithList: UIView {
         self.tfAccount.textColor = UIColor.lightGrayColor()
         self.tfAccount.leftView = padding
         self.tfAccount.leftViewMode = .Always
+        self.tfAccount.autoresizingMask = UIViewAutoresizing.FlexibleWidth
         self.addSubview(self.tfAccount)
         
         
@@ -105,7 +106,7 @@ class UITextFieldWithList: UIView {
         self.tfPsw.delegate = self
         self.tfPsw.textColor = UIColor.lightGrayColor()
         self.tfPsw.secureTextEntry = true
-        
+        self.tfPsw.autoresizingMask = UIViewAutoresizing.FlexibleWidth
         
         self.addSubview(self.tfPsw)
         let padding1 =  UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 20))
