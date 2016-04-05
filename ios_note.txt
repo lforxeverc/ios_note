@@ -1,0 +1,5 @@
+1、CALayer的content必须是CGImage对象，不然得不到对应的图层！
+2、CALayer的contentGravity设置内容适应方式、contentScale是像素点和apple点的对应,
+可以解决CATextLayer绘制文字锯齿问题
+3、UIView有一个叫做clipsToBounds的属性可以用来决定是否显示超出边界的内容，CALayer对应的属性叫做masksToBounds
+4、UIApplication.sharedApplication().delegate?.window获取的是当前屏幕的uiwindow，UIApplication.sharedApplication().keywindow在第一个页面的viewdidload是空的，但在viewdidload之后是有值的。keywindow的值是最后一个调用makekeyandvisible()的组件
